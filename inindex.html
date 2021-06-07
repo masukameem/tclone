@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Masuka Meem | Twitter Clone</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <!-- Sidenav -->
+                <div class="col-lg-3">
+                    <!-- Sidenav Starts -->
+                    <div class="sidenav">
+                        <!-- Nav Starts -->
+                        <nav>
+                            <a class="navbar-brand blue" href="#"><i class="fab fa-twitter"></i></a>
+                            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button> -->
+                            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                            <ul class="list-unstyled mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <span class="nav-icon"><i class="fas fa-house-user"></i></span>
+                                        <span class="nav-text">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="nav-icon"><i class="fas fa-hashtag"></i></span>
+                                        <span class="nav-text">Explore</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="padding-top: 16px;">
+                                        <span class="notification-no">20+</span>
+                                        <span class="nav-icon"><i class="far fa-bell"></i></span>
+                                        <span class="nav-text">Notifications</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="nav-icon"><i class="far fa-envelope"></i></span>
+                                        <span class="nav-text">Messages</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="nav-icon"><i class="far fa-bookmark"></i></span>
+                                        <span class="nav-text">Bookmarks</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="nav-icon"><i class="far fa-list-alt"></i></span>
+                                        <span class="nav-text">Lists</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="nav-icon"><i class="far fa-user"></i></span>
+                                        <span class="nav-text">Profile</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropup">
+                                    <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="nav-icon"><i class="fas fa-ellipsis-h"></i></span>
+                                        <span class="nav-text">More</span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- </div> -->
+                        </nav>
+                        <!-- Nav Ends -->
+                        <div class="nav-tweet">
+                            <button class="btn btn-tweet"><span class="link-text">Tweet</span></button>
+                        </div>
+                        <!-- Account Switcher Starts -->
+                        <div class="account-switcher dropup">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mashuka Meem
+                                <span><i class="fas fa-ellipsis-h"></i></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <!-- Account Switcher Ends -->
+                    </div>
+                    <!-- Sidenav Ends -->
+                </div>
+                <!-- Middle Column -->
+                <div class="col-lg-6">
+                    <!-- Main Column Starts -->
+                    <div class="main">
+                        <!-- Page Name Starts -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="main-top">
+                                    <!-- Page Name -->
+                                    <h1>Home<span class="blue float-end"><i class="far fa-star"></i></span></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Page Name Ends -->
+                        <!-- Tweet Box Starts -->
+                        <div class="tweet-box">
+                            <div class="row">
+                                <!-- Profile Image -->
+                                <div class="col-1">
+                                    <div class="profile-image">
+                                        <img src="images/profile-image.jpg" alt="user-name">
+                                    </div>
+                                </div>
+                                <!-- Tweet Box -->
+                                <div class="col">
+                                    <form @submit.prevent="addItem" class="form-tweet">
+                                        <textarea v-model="newItem" style="white-space: pre-line;" class="form-control"
+                                            rows="1" placeholder="What's happening?"></textarea>
+                                        <!-- Tweet Toolbar Starts -->
+                                        <div class="tweet-toolbar">
+                                            <ul class="nav blue align-items-center">
+                                                <li><i class="far fa-image"></i></li>
+                                                <li><i class="far fa-square"></i></li>
+                                                <li><i class="fas fa-poll"></i></li>
+                                                <li><i class="far fa-smile"></i></li>
+                                                <li><i class="far fa-calendar-check"></i></li>
+                                                <li class="ms-auto"><button class="btn btn-tweet">Tweet</button></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Tweet Toolbar Ends -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tweet Box Ends -->
+                        <hr>
+                        <!-- Twitter Feed Starts -->
+                        <div class="twitter-feed">
+                            <!-- Tweet Starts -->
+                            <div v-for="(item, index) in items.slice().reverse()" :key="index" class="tweet">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <!-- Profile Image -->
+                                        <div class="profile-image">
+                                            <img src="images/user-1.jpg" alt="user-name">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="tweet-contents">
+                                            <!-- Tweet Header -->
+                                            <div class="tweet-header d-flex">
+                                                <p><span class="name">Mashuka Meem</span> <span
+                                                        class="light">@mashuka_meem
+                                                        .
+                                                        5m</span></p>
+                                                <a class="tweet-action ms-auto" id="navbarDropdown" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h"></i></a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a @click="removeItem(index)" class="btn">Remove from list</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- Tweet Body -->
+                                            <div class="tweet-body">
+                                                <!-- Text -->
+                                                <p style="white-space: pre-line;" class="tweet-p">{{ item.tweet }}</p>
+                                                <!-- Image, Gif, Video etc -->
+                                                <div class="tweet-visual">
+                                                    <img :src="item.image" alt="Tweet visual">
+                                                </div>
+                                            </div>
+                                            <!-- Tweet Footer -->
+                                            <div class="tweet-footer">
+                                                <ul class="nav">
+                                                    <li><a href="#"><i class="far fa-comment"></i></a><span
+                                                            class="reaction-count">45</span></li>
+                                                    <li><a href="#"><i class="fas fa-retweet"></i></a><span
+                                                            class="reaction-count">15</span></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a><span
+                                                            class="reaction-count">199k</span></li>
+                                                    <li><a href="#"><i class="fas fa-upload"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tweet Ends -->
+                            <div class="tweet">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <!-- Profile Image -->
+                                        <div class="profile-image">
+                                            <img src="images/netflix.jpg" alt="user-name">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="tweet-contents">
+                                            <!-- Tweet Header -->
+                                            <div class="tweet-header d-flex">
+                                                <p><span class="name">Meem</span> <span class="light">@m_meem
+                                                        .
+                                                        48m</span></p>
+                                                <span class="tweet-action ms-auto"><i
+                                                        class="fas fa-ellipsis-h"></i></span>
+                                            </div>
+                                            <!-- Tweet Body -->
+                                            <div class="tweet-body">
+                                                <!-- Text -->
+                                                <p class="tweet-p">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                    elit.
+                                                    Blanditiis,
+                                                    doloremque dolorem! Voluptatem aliquam, optio beatae animi
+                                                    consequuntur
+                                                    qui</p>
+                                            </div>
+                                            <!-- Tweet Footer -->
+                                            <div class="tweet-footer light">
+                                                <ul class="nav">
+                                                    <li><a href="#"><i class="far fa-comment"></i></a><span
+                                                            class="reaction-count">45</span></li>
+                                                    <li><a href="#"><i class="fas fa-retweet"></i></a><span
+                                                            class="reaction-count">15</span></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a><span
+                                                            class="reaction-count">199k</span></li>
+                                                    <li><a href="#"><i class="fas fa-upload"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ************* -->
+                            <div class="tweet">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <!-- Profile Image -->
+                                        <div class="profile-image">
+                                            <img src="images/Starbucks.jpg" alt="user-name">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="tweet-contents">
+                                            <!-- Tweet Header -->
+                                            <div class="tweet-header d-flex">
+                                                <p><span class="name">Mashuka</span> <span class="light">@mashukameem
+                                                        .
+                                                        18m</span></p>
+                                                <span class="tweet-action ms-auto"><i
+                                                        class="fas fa-ellipsis-h"></i></span>
+                                            </div>
+                                            <!-- Tweet Body -->
+                                            <div class="tweet-body">
+                                                <!-- Image, Gif, Video etc -->
+                                                <div class="tweet-visual">
+                                                    <img src="images/Starbucks-1.jpg" alt="Tweet visual">
+                                                </div>
+                                            </div>
+                                            <!-- Tweet Footer -->
+                                            <div class="tweet-footer light">
+                                                <ul class="nav">
+                                                    <li><a href="#"><i class="far fa-comment"></i></a><span
+                                                            class="reaction-count">45</span></li>
+                                                    <li><a href="#"><i class="fas fa-retweet"></i></a><span
+                                                            class="reaction-count">15</span></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a><span
+                                                            class="reaction-count">199k</span></li>
+                                                    <li><a href="#"><i class="fas fa-upload"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ************* -->
+                        </div>
+                        <!-- Twitter Feed Ends -->
+                    </div>
+                    <!-- Main Column Ends -->
+                </div>
+                <!-- Trending Column -->
+                <div class="col">
+                    <div class="end">
+                        <!-- Twitter Search -->
+                        <div class="row">
+                            <form action="" class="form-search">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fas fa-search light"></i>
+                                    </span>
+                                    <input class="form-control" type="text" placeholder="Search Twitter">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Trending -->
+                        <div class="row">
+                            <div class="col">
+                                <!-- Trend Header -->
+                                <div class="card trending">
+                                    <div class="card-header">
+                                        Trends for you <span class="float-end"><i class="fas fa-cog blue"></i></span>
+                                    </div>
+                                    <!-- Trend List Starts -->
+                                    <ul class="list-group">
+                                        <!-- Trend Starts -->
+                                        <li class="list-group-item">
+                                            <!-- Interest -->
+                                            <p>Technology . Trending
+                                                <span class="float-end"><i class="fas fa-ellipsis-h"></i></span>
+                                            </p>
+                                            <!-- Hashtag -->
+                                            <h6>Google</h6>
+                                            <!-- Trend Count -->
+                                            <p>705k Tweets</p>
+                                        </li>
+                                        <!-- Trend Ends -->
+                                        <li class="list-group-item">
+                                            <!-- Interest -->
+                                            <p>Technology . Trending
+                                                <span class="float-end"><i class="fas fa-ellipsis-h"></i></span>
+                                            </p>
+                                            <!-- Hashtag -->
+                                            <h6>Google</h6>
+                                            <!-- Trend Count -->
+                                            <p>705k Tweets</p>
+                                        </li>
+                                        <!-- ***************** -->
+                                        <li class="list-group-item">
+                                            <!-- Interest -->
+                                            <p>Technology . Trending
+                                                <span class="float-end"><i class="fas fa-ellipsis-h"></i></span>
+                                            </p>
+                                            <!-- Hashtag -->
+                                            <h6>Google</h6>
+                                            <!-- Trend Count -->
+                                            <p>705k Tweets</p>
+                                        </li>
+                                        <!-- ***************** -->
+                                        <li class="list-group-item">
+                                            <!-- Interest -->
+                                            <p>Technology . Trending
+                                                <span class="float-end"><i class="fas fa-ellipsis-h"></i></span>
+                                            </p>
+                                            <!-- Hashtag -->
+                                            <h6>Google</h6>
+                                            <!-- Trend Count -->
+                                            <p>705k Tweets</p>
+                                        </li>
+                                        <!-- ***************** -->
+                                        <li class="list-group-item">
+                                            <!-- Interest -->
+                                            <p>Technology . Trending
+                                                <span class="float-end"><i class="fas fa-ellipsis-h"></i></span>
+                                            </p>
+                                            <!-- Hashtag -->
+                                            <h6>Tool</h6>
+                                            <!-- Trend Count -->
+                                            <p>705k Tweets</p>
+                                        </li>
+                                        <!-- ***************** -->
+                                    </ul>
+                                    <!-- Trend List Ends -->
+                                    <div class="card-footer">
+                                        <a href="#" class="blue">Show more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="footer">
+                                    <ul class="nav">
+                                        <li><a href="#">Terms of Service</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Cookie Policy</a></li>
+                                        <li><a href="#">Ads Info</a></li>
+                                        <li><a href="#">More <i class="fas fa-ellipsis-h"></i></a></li>
+                                        <li><a href="#">&copy; 2021 Twitter, Inc</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <!-- Vue Js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                items: [{
+                        tweet: 'Lorem ipsum dolor, sit amet consectetur',
+                        image: 'images/chanel.jpg'
+                    },
+                    {
+                        tweet: 'Lorem ipsum dolor, sit amet',
+                        image: 'images/chanel.jpg'
+                    },
+                    {
+                        tweet: 'Lorem ipsum dolor, sit amet consectetur',
+                        image: 'images/chanel.jpg'
+                    }
+                ],
+                newItem: ''
+            },
+            // computed: {
+            //     // countRetweet() {
+            //     //     var countRetweet
+            //     //     this.items.array.forEach(items => {
+            //     //         countRetweet += this.no
+            //     //     });
+            //     //     return countRetweet
+            //     // }
+            // },
+            methods: {
+                addItem() {
+                    this.items.push({
+                        tweet: this.newItem,
+                        image: 'images/user-1.jpg'
+                    })
+                },
+                removeItem(index) {
+                    this.items.splice(index, 1)
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
